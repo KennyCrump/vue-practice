@@ -1,7 +1,10 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <input v-model.number="num1" type="number" />        
+    <span>+</span>
+    <input v-model.number="num2" type="number" />
+    <span>=</span>
+    <span>{{num1 + num2}}</span>
   </div>
 </template>
 
